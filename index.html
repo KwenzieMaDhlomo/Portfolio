@@ -166,26 +166,24 @@ Whether it's designing intuitive user interfaces or implementing efficient backe
         </div>
 		
         <div class="form-container">
-              <h2 class="contact-me">Contact<span>Me</span></h2>
-			  
-			  <form action = "#">
-			  
-			  <div class="input-box">
-			    <input type="text" placeholder="Full Name">
-				<input type="email" placeholder="Email">
-			  </div>
-				
-			 <div class="input-box">
-			    <input type="number" placeholder="Contact Number">
-				<input type="text" placeholder="Subject">
-			</div>
+  <h2 class="contact-me">Contact <span>Me</span></h2>
 
-               <textarea name="" id="" cols="30"
-			   rows="10" placeholder="Your Message">Your Message
-			   </textarea>
-			   <input type="submit" value="Send Message" class="btn-1">
-                  </form>
-                </section>	
+  <form onsubmit="sendToWhatsApp(); return false;">
+    <div class="input-box">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-box">
+      <input type="tel" id="phone" placeholder="Contact Number" required>
+      <input type="text" id="subject" placeholder="Subject" required>
+    </div>
+
+    <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+    <input type="submit" value="Send Message" class="btn-1">
+  </form>
+</div>
 
          <footer class="footer">
 		 
